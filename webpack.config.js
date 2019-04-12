@@ -43,6 +43,11 @@ module.exports = {
                     'less-loader'
                 ],
             },
+            {
+                test: /\.(graphql|gql)$/,
+                exclude: /node_modules/,
+                loader: 'graphql-tag/loader'
+            },
         ]
     }
 };
